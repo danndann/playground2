@@ -5,10 +5,14 @@ var DannDann = (function () {
     DannDann.prototype.init = function () {
         var ele = $("<div></div>");
         var str = "TEST";
-        str += device.name;
-        str += device.platform;
-        str += device.version;
-        str += device.model;
+        try  {
+            str += device.name;
+            str += device.platform;
+            str += device.version;
+            str += device.model;
+        } catch (err) {
+            str = "ERROR" + err;
+        }
         ele.text(str);
         $("body").append(ele);
     };
