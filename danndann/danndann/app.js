@@ -4,11 +4,8 @@ var DannDann = (function () {
     }
     DannDann.prototype.init = function () {
         var ele = $("<div></div>");
-        var str = "";
-        str += device.name;
-        str += device.platform;
-        str += device.version;
-        str += device.model;
+        var str = "TEST";
+
         ele.text(str);
         $("body").append(ele);
     };

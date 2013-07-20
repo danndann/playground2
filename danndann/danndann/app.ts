@@ -7,11 +7,11 @@ class DannDann {
 
     private init(): void {
         var ele = $("<div></div>");
-        var str = "";
-        str += device.name;
-        str += device.platform;
-        str += device.version;
-        str += device.model;
+        var str = "TEST";
+        //str += device.name;
+        //str += device.platform;
+        //str += device.version;
+        //str += device.model;
         ele.text(str);
         $("body").append(ele);
     }
