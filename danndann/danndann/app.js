@@ -1,5 +1,3 @@
-/// <reference path='phonegap.d.ts' />
-/// <reference path='script/jquery.d.ts' />
 var DannDann = (function () {
     function DannDann() {
         this.init();
@@ -17,7 +15,6 @@ var DannDann = (function () {
     return DannDann;
 })();
 
-window.onload = function () {
+$(window).ready(function () {
     new DannDann();
-};
-//@ sourceMappingURL=app.js.map
+});

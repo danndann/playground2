@@ -15,9 +15,9 @@ class DannDann {
         ele.text(str);
         $("body").append(ele);
     }
-    
+
 }
 
-window.onload = () => {
+$(window).ready(function (): void {
     new DannDann();
-};
+});
