@@ -20,6 +20,7 @@
     <Content Include="app.min.js">
       <DependentUpon>app.ts</DependentUpon>
     </Content>
+    <Content Include="config.xml" />
     <Content Include="index.html" />
     <Content Include="app.js">
       <DependentUpon>app.ts</DependentUpon>
