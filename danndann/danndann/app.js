@@ -1,11 +1,10 @@
 /// <reference path='phonegap.d.ts' />
 /// <reference path='script/jquery.d.ts' />
-class DannDann {
-    constructor() {
+var DannDann = (function () {
+    function DannDann() {
         this.init();
     }
-
-    private init(): void {
+    DannDann.prototype.init = function () {
         var ele = $("<div></div>");
         var str = "";
         str += device.name;
@@ -14,10 +13,11 @@ class DannDann {
         str += device.model;
         ele.text(str);
         $("body").append(ele);
-    }
-    
-}
+    };
+    return DannDann;
+})();
 
-window.onload = () => {
+window.onload = function () {
     new DannDann();
 };
+//@ sourceMappingURL=app.js.map
