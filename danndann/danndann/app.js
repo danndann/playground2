@@ -5,7 +5,9 @@ var DannDann = (function () {
     DannDann.prototype.init = function () {
         var ele = $("<div></div>");
         var str = "TEST";
+
         try  {
+            var device = phoneGapNavigator.device;
             str += device.name;
             str += device.platform;
             str += device.version;
